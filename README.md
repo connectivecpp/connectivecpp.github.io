@@ -12,9 +12,17 @@ We are dedicated to connecting the world through a high level, modern C++ networ
 
 ## Repositories
 
-[chops-net-ip](https://connectivecpp.github.io/chops-net-ip), a high level, general purpose C++17 networking API that simplifies creating TCP and UDP network connections.
+[chops-net-ip](https://connectivecpp.github.io/chops-net-ip), a high level, general purpose C++ 17 (soon to be C++ 20) networking API that simplifies creating TCP and UDP network connections (work in progress - currently it is being reorganized).
 
-[utility-rack](https://connectivecpp.github.io/utility-rack), a tasty collection of utilities, including general purpose functionality used in the Chops Net IP repository.
+[utility-rack](https://connectivecpp.github.io/utility-rack), a small and tasty collection of utilities.
+
+[wait-queue](https://connectivecpp.github.io/wait-queue), a header-only C++ 20 MPMC thread-safe queue.
+
+[binary-serialize](https://connectivecpp.github.io/binary-serialize), a header-only C++ 20 library for binary serialization, using `std::format` style syntax.
+
+[periodic-timer](https://connectivecpp.github.io/periodic-timer), a header-only C++ 20 asynchronous periodic timer, using Asio facilities.
+
+[shared-buffer](https://connectivecpp.github.io/shared-buffer), header-only C++ 20 reference counted byte buffer classes.
 
 ## About
 
@@ -42,7 +50,9 @@ Principal Author is [Cliff Green](https://github.com/cliffg-softwarelibre).
 
 Principal Co-author is [Thurman Gillespy](https://tgill880.github.io).
 
-Team Members are [Roxanne Agerone](https://github.com/oxenran), [Nathan Deutsch](https://github.com/n-deutsch), [Casey Ghilardi](https://github.com/Crghilardi), and [Bryan Concari](https://github.com/irql).
+Team Members include [Roxanne Agerone](https://github.com/oxenran), [Nathan Deutsch](https://github.com/n-deutsch), and [Stephen Rogers](https://github.com/srcodes12).
+
+Former Team Members include [Casey Ghilardi](https://github.com/Crghilardi), and [Bryan Concari](https://github.com/irql).
 
 Logo and banner designed by Ariel Peretz.
 
@@ -54,13 +64,13 @@ Chops Net IP is in use at [Sound Life Sciences](https://www.soundlifesci.com/), 
 
 ## C++ Language Requirements and Alternatives
 
-C++ 17 is the primary baseline for the Connective C++ projects.
+C++ 20 is the primary baseline for the Connective C++ projects (Chops Net IP is still being updated for C++ 20).
 
 A significant number of C++ 11 features are in the APIs and implementations. A C++ 03 version will not be provided in any of the Connective C++ repositories. 
 
-There are numerous C++ 14 and C++ 17 features in use, although many of them could be replaced with Boost (or similar) utilities or rewritten to use only C++ 11 capabilities. For users that don't want to use the latest C++ compilers or compile with C++ 17 flags, Martin Moene provides an excellent set of header-only libraries that implement many useful C++ library features, both C++ 17 as well as future C++ standards (see [References](doc/references.md)).
+There are numerous C++ 14 and C++ 17 features in use, although many of them could be replaced with Boost (or similar) utilities or rewritten to use only C++ 11 (or 14 or 17) capabilities. For users that don't want to use the latest C++ compilers or compile with C++ 20 flags, Martin Moene provides an excellent set of header-only libraries that implement many useful C++ library features (see [References](doc/references.md)).
 
-While the main production branch will always be developed and tested with C++ 17 features (and relatively current compilers), alternative branches and forks for older compiler versions may be implemented. Collaboration (through forking, change requests, etc) is very welcome to achieve older compiler conformance.
+While the main production branch will always be developed and tested with C++ 20 features (and relatively current compilers), alternative branches and forks for older compiler versions may be implemented. Collaboration (through forking, change requests, etc) is very welcome to achieve older compiler conformance.
 
 ## References
 

@@ -2,11 +2,13 @@
 
 ## Networking and Asynchronous Design
 
-- Chris Kohlhoff is a networking expert (among other expertises, including C++), creator of the Asio library and initial author of the C++ Networking Technical Standard (TS). Asio is [available here](https://think-async.com/) as well as at Chris' [GitHub site](https://github.com/chriskohlhoff/). Asio forms the basis for the C++ Networking Technical Standard (TS), which will be standardized in C++ 23 or C++ 26 (or thereabouts). Currently the Chops Net IP library uses the stand-alone Asio repository from Chris' GitHub account.
+- Chris Kohlhoff is a networking expert (among other expertises including C++ and a major contributor to the C++ executors proposals), creator of the Asio library and initial author of the C++ Networking Technical Standard (TS). Asio is [available here](https://think-async.com/) as well as at Chris' [GitHub site](https://github.com/chriskohlhoff/). Asio is a major basis and inspiration for possible future C++ networking standardization. Currently the Chops Net IP library uses the stand-alone Asio repository from Chris' GitHub account.
 
-- Vinnie Falco is the author of the Boost Beast library, available at [Boost.org](https://www.boost.org/). Beast is an excellent building block library for asynchronous (and synchronous) HTTP and WebSocket applications. The Beast library uses Asio. Vinnie is proficient in C++ including presenting at [CppCon](https://cppcon.org/) and is also active in blockchain development and other technology areas. Vinnie has a [GitHub site](https://github.com/vinniefalco). While Chops Net IP does not depend on Beast, the choices and design rationale made by Vinnie in implementing Beast are highly helpful.
+- Vinnie Falco is the author of the Boost Beast library, available at [Boost.org](https://www.boost.io/). Beast is an excellent building block library for asynchronous (and synchronous) HTTP and WebSocket applications. The Beast library uses Asio. Vinnie is proficient in C++ including presenting at [CppCon](https://cppcon.org/) and is also active in blockchain development and other technology areas. Vinnie has a [GitHub site](https://github.com/vinniefalco). While Chops Net IP does not depend on Beast, the choices and design rationale made by Vinnie in implementing Beast are highly helpful.
 
-- Kirk Shoop is a C++ expert, particularly in the area of asynchronous design, and has presented multiple times at [CppCon](https://cppcon.org/). He is a co-author of the [Unified Executors Proposal for C++](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/p0443r12.html) and has a [GitHub site](https://github.com/kirkshoop). 
+- Kirk Shoop is a C++ expert, particularly in the area of asynchronous design, and has presented multiple times at [CppCon](https://cppcon.org/). He is a co-author of the [`std::execution` Proposal for C++](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2024/p2300r10.html) and has a [GitHub site](https://github.com/kirkshoop). 
+
+https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2024/p2300r10.html
 
 ## Concurrency
 
@@ -26,7 +28,7 @@
 
 - Richard Hodges is a prolific C++ expert with over 1,900 answers on StackOverflow as well as numerous discussions relating to C++ standardization and has a [GitHub site](https://github.com/madmongo1).
 
-- Vittorio Romeo is a blog author and C++ expert with a [web site](https://vittorioromeo.info/) and a [GitHub site](https://github.com/SuperV1234). Vittorio's blog is excellent and well worth reading.
+- Vittorio Romeo is a blog author and C++ expert with a [web site](https://vittorioromeo.info/) and a [GitHub site](https://github.com/vittorioromeo). Vittorio's blog is excellent and well worth reading.
 
 - Blitz Rakete is a student software developer who has the user id of Rakete1111 on many forums and sites (including Stackoverflow) and has a [GitHub site](https://github.com/Rakete1111).
 
@@ -45,14 +47,14 @@
 
 ## Unit Testing
 
-- Phil Nash is the author of the Catch C++ unit testing library. The Catch library is [available here](https://github.com/catchorg/Catch2).
+- Phil Nash is the original author of the Catch C++ unit testing library, but other maintainers have taken over and made significant updates. The Catch library is [available here](https://github.com/catchorg/Catch2).
 
 ## Documentation
 
-- Sy Brand's [article on writing clear documentation](https://devblogs.microsoft.com/cppblog/clear-functional-c-documentation-with-sphinx-breathe-doxygen-cmake/) has been invaluable. In addition, Sy is a well known C++ expert and presenter, known as TartanLLama, and his blog is [available here](https://blog.tartanllama.xyz).
+- Sy Brand's [article on writing clear documentation](https://devblogs.microsoft.com/cppblog/clear-functional-c-documentation-with-sphinx-breathe-doxygen-cmake/) has been invaluable. In addition, Sy is a well known C++ expert and presenter, known as TartanLLama, and Sy's blog is [available here](https://blog.tartanllama.xyz).
 
 - Diagrams in the Connective C++ documentation are created using [draw.io](https://www.draw.io/).
 
 ## Boost
 
-- The Boost libraries collection is a high quality set of C++ libraries, [available here](https://www.boost.org/).
+- The Boost libraries collection is a high quality set of C++ libraries, [available here](https://www.boost.io/).

@@ -12,9 +12,17 @@ We are dedicated to connecting the world through a high level, modern C++ networ
 
 ## Repositories
 
-[chops-net-ip](https://connectivecpp.github.io/chops-net-ip), a high level, general purpose C++17 networking API that simplifies creating TCP and UDP network connections.
+[chops-net-ip](https://connectivecpp.github.io/chops-net-ip), a high level, general purpose C++ 20 networking API that simplifies creating TCP and UDP network connections.
 
-[utility-rack](https://connectivecpp.github.io/utility-rack), a tasty collection of utilities, including general purpose functionality used in the Chops Net IP repository.
+[utility-rack](https://connectivecpp.github.io/utility-rack), a small and tasty collection of utilities, although most of them are no longer needed in C++ 20.
+
+[wait-queue](https://connectivecpp.github.io/wait-queue), a header-only C++ 20 MPMC thread-safe queue.
+
+[binary-serialize](https://connectivecpp.github.io/binary-serialize), a header-only C++ 20 library for binary serialization, using `std::format` style syntax (work in progress).
+
+[periodic-timer](https://connectivecpp.github.io/periodic-timer), a header-only C++ 20 asynchronous periodic timer, using Asio facilities.
+
+[shared-buffer](https://connectivecpp.github.io/shared-buffer), header-only C++ 20 reference counted byte buffer classes.
 
 ## About
 
@@ -42,7 +50,9 @@ Principal Author is [Cliff Green](https://github.com/cliffg-softwarelibre).
 
 Principal Co-author is [Thurman Gillespy](https://tgill880.github.io).
 
-Team Members are [Roxanne Agerone](https://github.com/oxenran), [Nathan Deutsch](https://github.com/n-deutsch), [Casey Ghilardi](https://github.com/Crghilardi), and [Bryan Concari](https://github.com/irql).
+Team Members include [Roxanne Agerone](https://github.com/oxenran), [Nathan Deutsch](https://github.com/n-deutsch), and [Stephen Rogers](https://github.com/srcodes12).
+
+Former Team Members include [Casey Ghilardi](https://github.com/Crghilardi), and [Bryan Concari](https://github.com/irql).
 
 Logo and banner designed by Ariel Peretz.
 
@@ -50,17 +60,17 @@ Contributions have been made by Matthew Earulic, Daniel Muldrew, Bob Higgins, an
 
 ## Who is Using Connective C++ Software?
 
-Chops Net IP is in use at [Sound Life Sciences](https://www.soundlifesci.com/), a Seattle startup creating awesome medical software and devices using high frequency sound to monitor respiration rate. This allows detection of opiod overdose, early signs of infection, and other breathing related disorders.
+Chops Net IP was in use at Sound Life Sciences, a Seattle startup creating medical software and devices using high frequency sound to monitor respiration rate. This allows detection of opiod overdose, early signs of infection, and other breathing related disorders.
 
 ## C++ Language Requirements and Alternatives
 
-C++ 17 is the primary baseline for the Connective C++ projects.
+C++ 20 is the primary baseline for the Connective C++ projects.
 
 A significant number of C++ 11 features are in the APIs and implementations. A C++ 03 version will not be provided in any of the Connective C++ repositories. 
 
-There are numerous C++ 14 and C++ 17 features in use, although many of them could be replaced with Boost (or similar) utilities or rewritten to use only C++ 11 capabilities. For users that don't want to use the latest C++ compilers or compile with C++ 17 flags, Martin Moene provides an excellent set of header-only libraries that implement many useful C++ library features, both C++ 17 as well as future C++ standards (see [References](doc/references.md)).
+There are numerous C++ 14 and C++ 17 features in use and some C++ 20 features, although many of them could be replaced with Boost (or similar) utilities or rewritten to use only C++ 11 (or 14 or 17) capabilities. For users that don't want to use the latest C++ compilers or compile with C++ 20 flags, Martin Moene provides an excellent set of header-only libraries that implement many useful C++ library features (see [References](doc/references.md)).
 
-While the main production branch will always be developed and tested with C++ 17 features (and relatively current compilers), alternative branches and forks for older compiler versions may be implemented. Collaboration (through forking, change requests, etc) is very welcome to achieve older compiler conformance.
+While the main production branch will always be developed and tested with C++ 20 features (and relatively current compilers), alternative branches and forks for older compiler versions may be implemented. Collaboration (through forking, change requests, etc) is welcome to achieve older compiler conformance.
 
 ## References
 
@@ -68,13 +78,13 @@ Connective C++ would not be possible without articles, libraries, and code examp
 
 ## Team Bios
 
-**Cliff Green** (cliffg at connectivecpp dot com) is a software engineer and has worked for many years writing infrastructure libraries and applications for use in networked and distributed systems, typically where high reliability or uptime is required. The domains where he has worked include wireless networks (in particular cellular 9-1-1), location technology, and large scale embedded and simulation systems in the military aerospace industry. He has volunteered many years at [CppCon](https://cppcon.org/) (when it was in Bellevue) and presented at BoostCon (before it was renamed to [C++ Now](http://cppnow.org/)).
+**Cliff Green** (cliffg at connectivecpp dot com) is a software engineer and has worked for many years writing infrastructure libraries and applications for use in networked and distributed systems, typically where high reliability or uptime is required. The domains where he has worked include wireless networks (in particular cellular 9-1-1), location technology, and large scale embedded and simulation systems in the military aerospace industry. He has volunteered many years at [CppCon](https://cppcon.org/) (when it was in Bellevue, Washington) and presented at BoostCon (before it was renamed to [C++ Now](http://cppnow.org/)).
 
-Cliff lives in the Seattle area and you may know him from other interests including volleyball, hiking, railroading (both the model variety and the real life big ones), music, or even parent support activities (if you are having major difficulties with your teen check out the [Changes Parent Support Network](http://cpsn.org)).
+Cliff previously lived in the Seattle area and you may know him from other interests including volleyball, hiking, railroading (both the model variety and the real life big ones), music, or even parent support activities (if you are having major difficulties with your teen check out the [Changes Parent Support Network](http://cpsn.org)). He now lives in Placitas, New Mexico (15 miles north of Albuquerque).
 
 **Thurman Gillespy** ([GitHub site](https://tgill880.github.io/), thurmang at connectivecpp dot com) is a software engineer although his first career was in diagnostic radiology, with stints at the University of Florida (1985 - 1990), University of Washington (1990 - 2008) and private practice in Seattle (2008 - 2015). In the 1990's, Thurman wrote Dr Razz, the first application that could display and manipulate radiology images on a Macintosh computer. In 2015 Thurman left medicine and went back to school to transform a life long hobby of programming into a second career as a software developer.
 
-**Roxanne Agerone** ([GitHub site](https://github.com/oxenran), roxanne at connectivecpp dot com) is a software engineer working in the Seattle area and loves classic cars (among other interests). She created the [Seattle C++ Meetup](https://www.meetup.com/Seattle-C-Meetup), typically meeting on Monday evenings, 6 pm, at Ballard Coffee Works, 2060 NW Market Street, Seattle.
+**Roxanne Agerone** ([GitHub site](https://github.com/RAgerone), roxanne at connectivecpp dot com) is a software engineer working in the Seattle area and loves classic cars (among other interests). She created the [Seattle C++ Meetup](https://www.meetup.com/Seattle-C-Meetup).
 
 **Nathan Deutsch** ([personal website](http://www.nathandeutsch.com), nathand at connectivecpp dot com) is a software engineer working in Bellevue, Washington. He likes to study and play jazz guitar and go camping. He also claims to be the best pool player in the state, accepting all challengers (if you think you're good enough, contact him!).
 
